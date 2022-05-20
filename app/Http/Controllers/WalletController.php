@@ -70,9 +70,12 @@ class WalletController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($wallet)
     {
         //
+        return view('wallet.edit', [
+            'category' => Category::findOrFail($wallet)
+        ]);
     }
 
     /**
@@ -82,9 +85,17 @@ class WalletController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $wallet)
     {
         //
+        $category = Category::findOrFail($wallet);
+
+        $category->category = $request->input('category');
+        $category->money = $request->input('money');
+
+        $category->save();
+
+        return redirect()->route('wallet.show', $wallet);
     }
 
     /**

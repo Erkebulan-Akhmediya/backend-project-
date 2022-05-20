@@ -55,3 +55,14 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+main > a > p {
+    width: 20%;
+    height: 10vh;
+    margin: 70px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

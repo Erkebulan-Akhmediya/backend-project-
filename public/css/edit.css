@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+}
+
+.block {
+    background-color: #64fc56;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+form {
+    width: 30%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+[type="text"], [type="number"] {
+    width: 80%;
+}

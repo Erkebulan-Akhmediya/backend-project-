@@ -17,6 +17,9 @@
     <main>
         <h1 class="block" id="name">Category Name: {{$category->category}}</h1>
         <p class="block" id="expense">Total Expenses: {{$category->money}}</p>
+        <a href="{{ route('wallet.edit', ['wallet' => $category->id]) }}">
+            <p class="block">Edit</p>
+        </a>
     </main>
 </body>
 </html>
