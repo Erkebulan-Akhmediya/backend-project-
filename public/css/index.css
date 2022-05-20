@@ -30,3 +30,23 @@ header {
 #header > a {
     font-size: 30px;
 }
+
+/* main */
+
+main {
+    height: 80vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#categories {
+    width: 40%;
+    height: 60vh;
+}
+
+#money {
+    width: 40%;
+    height: 60vh;
+}

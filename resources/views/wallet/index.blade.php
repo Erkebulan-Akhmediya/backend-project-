@@ -15,7 +15,22 @@
         </div>
     </header>
     <main>
-        <div class="block" id="categories"></div>
+        <div class="block" id="categories">
+            <h1>Categories</h1>
+            <div>
+                @foreach($categories as $category)
+                    <p>{{ $category->category }}</p>
+                @endforeach
+            </div>
+        </div>
+        <div class="block" id="money">
+            <h1>Expenses</h1>
+            <div>
+                @foreach($categories as $category)
+                    <p>{{ $category->money }}</p>
+                @endforeach
+            </div>
+        </div>
     </main>
 </body>
 </html>
