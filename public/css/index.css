@@ -34,7 +34,7 @@ header {
 /* main */
 
 main {
-    height: 80vh;
+    height: 70vh;
 
     display: flex;
     justify-content: space-around;
@@ -44,9 +44,43 @@ main {
 #categories {
     width: 40%;
     height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#categories p {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #money {
     width: 40%;
     height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#money p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    width: 10%;
+    height: 7vh;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

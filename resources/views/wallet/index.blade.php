@@ -32,5 +32,8 @@
             </div>
         </div>
     </main>
+    <footer>
+        <a href="{{ route('wallet.create') }}" class="block">Add</a>
+    </footer>
 </body>
 </html>
