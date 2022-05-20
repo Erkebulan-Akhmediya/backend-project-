@@ -1,0 +1,57 @@
+.block {
+    background-color: #64fc56;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    width: 50%;
+    height: 10vh;
+    margin: 30px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header > a {
+    font-size: 30px;
+}
+
+/* main */
+
+#welcome {
+    width: 50%;
+    height: 30vh;
+    font-size: 50px;
+    margin: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-started {
+    width: 30%;
+    height: 10vh;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
