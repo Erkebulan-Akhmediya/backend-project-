@@ -19,7 +19,7 @@
             <h1>Categories</h1>
             <div>
                 @foreach($categories as $category)
-                    <p>{{ $category->category }}</p>
+                    <a href="{{ route('wallet.show', ['wallet' => $category->id]) }}" >{{ $category->category }}</a><br>
                 @endforeach
             </div>
         </div>
@@ -27,7 +27,7 @@
             <h1>Expenses</h1>
             <div>
                 @foreach($categories as $category)
-                    <p>{{ $category->money }}</p>
+                <a href="{{ route('wallet.show', ['wallet' => $category->id]) }}" >{{ $category->money }}</a><br>
                 @endforeach
             </div>
         </div>
