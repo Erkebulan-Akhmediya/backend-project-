@@ -19,3 +19,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::resource('wallet', WalletController::class);
+
+Route::get('/registration', function () {
+    return view('registration');
+})->name('registration');
