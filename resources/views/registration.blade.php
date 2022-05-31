@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="{{ url('css/registration.css') }}">
 </head>
 <body>
-    <form>
+    <form method="POST" action="{{ route('store') }}">
+        @csrf
         <h1>Registration</h1>
         <p>Username</p>
         <input type="text" name="username">
