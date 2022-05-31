@@ -9,9 +9,15 @@
 </head>
 <body>
     <header>
+        <div class="block" style="height: 10vh; margin: 30px; padding: 0px 10px 0px 10px;"><h1>{{ $username }}</h1></div>
         <div class="block" id="header">
             <a href="{{ route('index') }}">Home</a>
             <a href="{{ route('wallet.index') }}">Wallet</a>
+            <!--<a href="{{ route('logout') }}">Logout</a>-->
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <input type="submit" value="Logout" id="logout">
+            </form>
         </div>
     </header>
     <main>

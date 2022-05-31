@@ -16,6 +16,7 @@
         <p>Password</p>
         <input type="password" name="password">
         <input type="submit">
+        <p style="color: black; font-size: 20px;">Don't have an account? <a href="{{ route('registration') }}" style="color: black;">Register</a></p>
     </form>
 </body>
 </html>

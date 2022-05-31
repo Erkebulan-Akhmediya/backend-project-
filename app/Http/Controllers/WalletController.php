@@ -17,7 +17,8 @@ class WalletController extends Controller
     {
         if (Auth::check()) {
             return view('wallet.index', [
-                'categories' => Category::all()
+                'categories' => Category::all(),
+                'username' => Auth::user()->username
             ]);
         } else {
             return redirect(route('login'));

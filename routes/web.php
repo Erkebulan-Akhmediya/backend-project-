@@ -53,3 +53,13 @@ Route::post('/check', function (Request $request) {
         return redirect(route('login'));
     }
 })->name('check');
+
+Route::post('/logout', function (Request $request) {
+    Auth::logout();
+
+    $request->session()->invalidate();
+ 
+    $request->session()->regenerateToken();
+
+    return redirect(route('index'));
+})->name('logout');
